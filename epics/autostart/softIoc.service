@@ -1,0 +1,17 @@
+[Unit]
+Description=Epics softIoc for WASA server
+Before=systemd-user-sessions.service
+
+[Service]
+TimeoutStartSec=0
+
+ExecStart=/home/pi/WASA_Target_Server/epics/autostart/softIoc_onstart.sh
+Type=oneshot
+RemainAfterExit=yes
+User=pi
+
+ExecStop=/home/pi/WASA_Target_Server/epics/autostart/softIoc_onstop.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
