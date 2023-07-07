@@ -1,0 +1,50 @@
+record(ai, "EXP:JEDI:WASA:InBeamPos:Y")
+{
+        field(DESC, "set motor position")
+        field(VAL,  "0")
+}
+record(ao, "EXP:JEDI:WASA:GetPos:Y")
+{
+        field(DESC, "get motor position")
+        field(VAL,  "0")
+}
+record(ai, "EXP:JEDI:WASA:DeltaPos:Y")
+{
+        field(DESC, "deltapos = inbeam - outbeam")
+        field(VAL,  "0")
+}
+record(ai, "EXP:JEDI:WASA:HOME:Y")
+{
+        field(DESC, "set motor home")
+        field(VAL,  "0")
+}
+record(stringout, "EXP:JEDI:WASA:Status:Y")
+{
+        field(DESC, "Y channel statuses")
+        field(VAL,  "0")
+}
+record(stringout, "EXP:JEDI:WASA:MODE")
+{
+        field(DESC, "operation mode select")
+        field(VAL,  "MANUAL")
+}
+record(stringout, "EXP:JEDI:WASA:GUI")
+{
+        field(DESC, "gui state")
+        field(VAL,  "OFF")
+}
+record(stringout, "EXP:JEDI:WASA:COMMAND")
+{
+        field(DESC, "COMMANDS TO PERFORM")
+        field(VAL,  "SET_HOME_ALL")
+}
+record(ai, "EXP:JEDI:WASA:CYCLE")
+{
+        field(DESC, "Cycle start/stop bool value")
+        field(VAL,  "0")
+}
+record(longin, "EXP:JEDI:WASA:INSTANCE")
+{
+        field(DESC, "gui Instance count")
+        field(VAL,  "0")
+}
