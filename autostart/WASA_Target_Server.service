@@ -1,0 +1,19 @@
+[Unit]
+Description=WASA target controll epics server
+Before=systemd-user-sessions.service
+Wants=softIoc.service
+After=network.target softIoc.service
+
+[Service]
+Type=forking
+ExecStart=/home/pi/WASA_Target_Server/autostart/WASA_Target_Server_onstart.sh
+RemainAfterExit=no
+User=pi
+Restart=always
+RestartSec=5s
+
+ExecStop=/home/pi/WASA_Target_Server/autostart/WASA_Target_Server__onstop.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
