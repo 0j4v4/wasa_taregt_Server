@@ -1,0 +1,4 @@
+2019-03-26 10:36:48,244 - INFO - Found USB port for the identifier 1FFB:0083 on /dev/ttyACM0
+2019-03-26 10:36:48,249 - INFO - JRK = (0, 'Ready')
+2019-03-26 10:36:48,463 - INFO - gui instances are 0
+2019-03-26 10:36:48,464 - INFO - server has started
